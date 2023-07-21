@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AZT_Assignment_5</title>
+
+</head>
+<body>
+
+  <section>
+   <h2>Exercise 1</h2>
+<p>Create a form that asks for the user name, <br>
+  email address, and a submit button.</p>
+
+  <style>
+    .required::after{
+      content: "*";
+      color: red;
+      font-size: medium;
+    }
+  </style>
+
+  <p style="color: red;">
+    * required field
+  </p> 
+
+<Form>
+  <label class="required" for="uname">User Name:</label>
+  <input type="text" maxlength="7" id="uname" name="User Name" placeholder="e.g Aung" required>
+  <br>
+  <br>
+
+  <label for="ph_no">Phone No.:</label>
+  <input type="number" maxlength="11" id="ph_no" name="Phone No." placeholder="Optional">
+  <br>
+  <br>
+
+  <label class="required" for="email">E-mail:</label>
+  <input type="email" id="email" name="E-mail" placeholder="e.g aung@example.com" required>
+  <br>
+  <br>
+
+  <label class="required" for="pw">Password</label>
+  <input type="password" id="pw" name="Password" required>
+  <br>
+  <br>
+
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</Form>
+  </section>
+  <hr>
+  
+  <Section>
+    <h2>Exercise 2</h2>
+    <p>Create a form that asks the user to select their favorite <br>
+      programming language from a dropdown menu and <br>
+      submit the form.
+    </p>
+  
+    <form action="#">    
+      <label for="p_lan">Choose your favorite programming language</label>
+      <select name="p_lan" id="p_lan">
+        <option value="select">Select one</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="java">Java Script</option>
+      </select>
+      <input type="submit">
+    </form>
+  </Section>
+  <hr>
+
+  <section>
+    <h2>Exercise 3</h2>
+    <p>Create a form that asks the user to rate a product on a scale <br>
+      of 1 to 5 using radio buttons and submit the form.</p>
+  
+      <form>
+        <input type="radio" id="vs" name="rating" value="Very Satisfied">
+        <label for="vs">Very Satisfied</label> <br>
+    
+        <input type="radio" id="s" name="rating" value="Satisfied">
+        <label for="s">Satisfied</label> <br>
+    
+        <input type="radio" id="n" name="rating" value="Neutral">
+        <label for="n">Neutral</label> <br>
+  
+        <input type="radio" id="ds" name="rating" value="Dissatisfied">
+        <label for="ds">Dissatisfied</label> <br>
+    
+        <input type="radio" id="vds" name="rating" value="Very Dissatisfied">
+        <label for="vds">Very Dissatisfied</label> <br><br>
+  
+        <input type="submit">
+      </form>
+  </section>
+    <hr>
+
+  <section>
+    <h2>Exercise 4</h2>
+    <p>Create a form that asks the user to select multiple options <br>
+      from a checkbox list and submit the form.</p>
+  
+      <h4>Choose one or more favorite programming languages</h4>
+  
+      <form>
+        <input type="checkbox" id="html">
+        <label for="html">HTML</label> <br>
+    
+        <input type="checkbox" id="css">
+        <label for="css">CSS</label> <br>
+    
+        <input type="checkbox" id="jvs">
+        <label for="jvs">Java Script</label> <br><br>
+  
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+  </section>  
+    <hr>
+
+  <Section>
+    <h2>Exercise 5</h2>
+    <p>Create a form that asks the user to enter their <br>
+        date of birth using a date picker and submit the form.</p>
+  
+      <form action="#">
+        <label for="bd">Birthday</label>
+        <input type="date" id="bd" name="birthday">
+        <input type="submit" value="Submit">
+      </form>
+  </Section>  
+    <hr>
+   
+  <section>
+    <h2>Exercise 6</h2>
+    <p>Create a form that asks the user to provide feedback <br>
+      about a product using a textarea and submit the form.</p>
+  
+      <form action="#">
+        <textarea name="message" id="message" cols="40" rows="20" style="width: 350px; height: 400;" maxlength="100">
+          Please write your feedback here.
+        </textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+  </section>  
+    <hr>
+
+  <section>
+    <h2>Exercise 7</h2>
+    <p>Create a form that asks the user to enter their <br>
+      credit card information (card number, expiration date, <br>
+      and CVV) and submit the form.</p>
+  
+      <h4>Enter your credit card information</h4>
+      
+      <Form>
+        <label for="cn">Card Number:</label>
+        <input type="number" maxlength="16" id="cn" name="card number">
+        <br>
+        <br>
+    
+        <label for="exd">Expiry Date:</label>
+        <input type="date" id="exd" name="Expiry Date">
+        <br>
+        <br>
+    
+        <label for="cvv">Card Verification Value:</label>
+        <input type="number" maxlength="16" id="cvv" name="card verification value">
+        <br>
+        <br>
+    
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </Form> 
+  </section>  
+    <hr>
+
+  <section>
+    <h2>Exercise 8</h2>
+    <p>Create a form that asks the user to upload <br>
+     a file and submit the form.</p> 
+ 
+     <form action="demo.php" method="post" enctype="multipart/form-data">
+       <!--form action="/action_page.php"-->
+       <!--form action="demo.php" method="post" 
+         enctype="multipart/form-data"-->
+       <label for="upload">Click to upload files</label>
+       <input type="file" id="upload" name="upload"><br><br>
+       <input type="submit" value="Upload File">
+     </form>
+  </section>  
+    <hr>
+  
+  <section>
+    <h2>Exercise 9</h2>
+    <p>Create a form that asks the user to select their gender <br>
+      from a set of radio buttons and submit the form.</p> 
+      
+      <h4>Select Gender</h4>
+      
+      <form action="#">
+        <input type="radio" id="m" name="Gender" value="Male">
+        <label for="m">Male</label> 
+      
+        <input type="radio" id="fm" name="Gender" value="Female">
+        <label for="fm">Female</label> <br><br>
+  
+        <input type="submit" value="Submit">
+      </form>
+  </section>  
+    <hr>
+
+  <section>
+    <h2>Exercise 10</h2> 
+    <p>Create a form that asks the user to enter their password <br>
+     and confirm it by re-entering it, and submit the form.</p>
+ 
+     <Form>
+       
+       <label for="pw1">Enter Password:</label>
+       <input class="password" type="password"  id="pw1" placeholder="Enter password here" name="Enter Password">
+       <br>
+       <br>
+ 
+       <label for="cpw">Confirm Password:</label>
+       <input class="confirmpassword" type="password" id="cpw" placeholder="Confirm password here" name="confirm password">
+ 
+       <button class="button" type="submit">Sign In</button>
+     </Form>
+ 
+     <script>
+         document.querySelector('.button').onclick = function(){
+       var password = document.querySelector('.password').value,
+       confirmpassword = document.querySelector('.confirmpassword').value;
+ 
+       if(password ==""){
+         alert("Field cannot be empty");
+       }
+       else if(password != confirmpassword){
+         alert("Password does not match, try again!!!");
+         return false
+       }
+       else if(password == confirmpassword){
+         alert("Passwords match.")
+       }
+       return true
+     }
+ 
+     </script>
+  </section>  
+    <hr>
+</body>
+</html>
