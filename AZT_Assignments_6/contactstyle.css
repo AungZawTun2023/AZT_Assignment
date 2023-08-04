@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  width: 100;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,0.3)),url(Images/shopping4.png);
+  background-size: cover;
+  background-position: center; 
+  position: relative;
+  background-repeat: no-repeat;
+}
+.nav-area{
+  float: right;
+  list-style: none;
+  margin-top: 45px;
+  padding-right: 10px;
+}
+.nav-area li{
+  display: inline-block;
+}
+.nav-area li a{
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 15px;
+  font-size: 14px;
+}
+.nav-area li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-area li:hover::after{
+  width: 100%;
+  transition: 0.5s;
+}
+.nav-area li a:hover{
+  background: #f7d2d2;
+  color: #333;
+  transition: 0.5s;
+}
+.logo img{
+  width: 130px;
+  float: left;
+  padding-left: 3%;
+  padding-top: 1%;
+}
+.contact{
+  width: 50%;
+  color: #fff;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  text-align: justify;
+}
+.contact h1{
+  text-align: left;
+  color: #6dc3f5;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.contact h2{
+  text-align: left;
+  color: #6dc3f5;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.contact a{
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 20px;
+  display: inline-block;
+  color: #dcdcf7;
+}
+.contact a:hover{
+  background: #fff;
+  color: #1b0bf5;
+}
+.contact p{
+  color: #eaf0d3;
+  font-size: 30px;
+}
+
+@media(max-width: 700px){
+  .contact h1{
+    font-size: 20px;
+}
+@media(max-width: 700px){
+  .contact h2{
+    font-size: 10px;
+}
+
+@media(max-width: 700px){
+  .contact p{
+    font-size: 15px;
+}
