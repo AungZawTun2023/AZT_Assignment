@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+body{
+  background: #080808;
+  color: #fff;
+}
+.header{
+  width: 100;
+  min-height: 100vh;
+  background-image: url(Images/elon13.png);
+ background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+.nav-area{
+  float: right;
+  list-style: none;
+  margin-top: 45px;
+  padding-right: 10px;
+}
+.nav-area li{
+  display: inline-block;
+}
+.nav-area li a{
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.nav-area li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-area li:hover::after{
+  width: 100%;
+  transition: 0.5s;
+}
+.nav-area li a:hover{
+  background: #f7d2d2;
+  color: #333;
+  transition: 0.5s;
+}
+.logo img{
+  width: 130px;
+  float: left;
+  padding-left: 3%;
+  padding-top: 1%;
+}
+
+.portfolio{
+  width: 50%;
+  color: #fff;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  text-align: justify;}
+
+  .portfolio ul li{
+    font-size: 16px;
+  }
+
+  .heading{
+    color: aqua;
+  }
+
+@media(max-width: 700px){
+  .welcome-text h1{
+    font-size: 20px;}
+}
+
+@media(max-width: 700px){
+  .welcome-text p{
+    font-size: 15px;}
+}
+
+
+
+
+
+

@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+body{
+  background: #080808;
+  color: #fff;
+}
+.header{
+  width: 100;
+  min-height: 100vh;
+  background-image: url(Images/elon13.png);
+ background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+.nav-area{
+  float: right;
+  list-style: none;
+  margin-top: 45px;
+  padding-right: 10px;
+}
+.nav-area li{
+  display: inline-block;
+}
+.nav-area li a{
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.nav-area li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-area li:hover::after{
+  width: 100%;
+  transition: 0.5s;
+}
+.nav-area li a:hover{
+  background: #f7d2d2;
+  color: #333;
+  transition: 0.5s;
+}
+.logo img{
+  width: 130px;
+  float: left;
+  padding-left: 3%;
+  padding-top: 1%;
+}
+
+.welcome-text{
+  width: 93%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.welcome-text h1{
+  text-align: center;
+  color: #d5eb10;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.welcome-text p{
+  color: #fff;
+  font-size: 35px;
+}
+
+/*--------Vision---------*/
+
+#vision{
+  padding: 5% 0;
+  color: #fff;
+}
+.vision{
+  width: 50%;
+  color: #fff;
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  text-align: justify;
+}
+
+.vision-heading{
+  text-align: left;
+
+}
+.vision-row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.vision-col-1{
+  flex-basis: 30%;
+  margin: 10px 10px 50px;
+}
+
+.vision-col-2{
+  flex-basis: 60%;
+  margin: 10px 10px 50px;
+}
+
+.vision-sub-title{
+  display: flex;
+  margin: 10px 10px 50px;
+}
+
+
+@media(max-width: 700px){
+  .welcome-text h1{
+    font-size: 20px;}
+}
+
+@media(max-width: 700px){
+  .welcome-text p{
+    font-size: 15px;}
+}
